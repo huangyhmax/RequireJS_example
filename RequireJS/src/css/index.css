@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container{
+    width:1280px;
+    height: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    /*margin-bottom: 20px;*/
+}
+.container .pics{
+    /*width:6000px;*/
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    /*left:-1000px;*/
+}
+.container .pics img{
+    width:1280px;
+    height: 840px;
+}
+.container .pics>li{
+    display: inline-block;
+}
+.container .arrow{
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    border: 1px solid #fff;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    top: 50%;
+    margin-top: -25px;
+    line-height: 50px;
+    color: #fff;
+}
+.arrow.pre{
+    left: 20px;
+}
+.arrow.next{
+    right: 20px;
+}
+.arrow:hover{
+    opacity: 0.5;
+    background-color:#827272;
+}
+.container .tips{
+    width: 100%;
+    font-size: 0;
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    text-align: center;
+}
+.tips>li{
+    border:1px solid #776161;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 6px;
+    width: 50px;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+.tips>li.active{
+    background-color: #827272
+}
+
+.session{
+    width:1000px;
+    margin: 0 auto;
+    /*border:1px solid red;*/
+}
+.pic-item img{
+    width: 300px;
+    height: 300px;
+    /*border:1px solid #333;*/
+    margin-left: 25px;
+    margin-top: 25px;
+    float: left;
+}
+.clearfix:after{
+    content:'';
+    clear: both;
+    display: block;
+}
+.triangle{
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fdbc07;
+    cursor:pointer;
+}
+.ct{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #fdbc07;
+    color: #fff;
+    font: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    font-size: '\5FAE\8F6F\96C5\9ED1';
+    cursor:pointer;
+}
